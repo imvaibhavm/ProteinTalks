@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/w3images/mac.jpg");
+        min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+            <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+            <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+            <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+    <h3>PRICING</h3>
+    <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-third w3-section">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-black w3-xlarge w3-padding-32">Beta Programme</li>
+                <li class="w3-padding-16">30 Days</li>
+                <li class="w3-padding-16">Workout / Diet Plan (either one of both)</li>
+                <li class="w3-padding-16">Warmup Protocol (With workout only)</li>
+                <li class="w3-padding-16">Weekly Follow-Up with Trainer</li>
+                <li class="w3-padding-16">Whatsapp Community Assistance</li>
+                <li class="w3-padding-16">Online Video Tutorial (With workout only)</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">Rs 499 /- Only</h2>
+                    <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <a href="https://pages.razorpay.com/pl_IDX2m3ojO9WuPO/view"> <button class="w3-button w3-black w3-padding-large">Subscribe Now</button></a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-third ">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-green w3-xlarge w3-padding-48">Alpha Programme</li>
+                <li class="w3-padding-16">45 Days</li>
+                <li class="w3-padding-16">Warmup and Cool-down Protocol</li>
+                <li class="w3-padding-16">Stretch Protocol</li>
+                <li class="w3-padding-16">Nutrition Protocol</li>
+                <li class="w3-padding-16">Workout  Protocol</li>
+                <li class="w3-padding-16">Nutrition Protocol</li>
+                <li class="w3-padding-16">Advanced Supplement Assistance</li>
+                <li class="w3-padding-16">Daily Follow-Up with Trainer</li>
+                <li class="w3-padding-16">Instant Whatsapp Assistance</li>
+                <li class="w3-padding-16">Premium Video Tutorial</li>
+                <li class="w3-padding-16">Corrective Exercises</li>
+                <li class="w3-padding-16">Medical History Assesment</li>
+                <li class="w3-padding-16">Blood test Assesment (Optional)</li>
+                <li class="w3-padding-16">Total Body Musculoskeletal Assesment</li>
+                <li class="w3-padding-16">Fix Muscles Imbalance</li>
+                <li class="w3-padding-16">Endurance & Strength Improvement</li>
+                <li class="w3-padding-16">Cardio Respiratory Enhancement</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">Rs 5999/- only </h2>
+                    <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <a href="https://pages.razorpay.com/Proteintalksalpha"> <button class="w3-button w3-black w3-padding-large">Subscribe Now</button></a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-third w3-section ">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-red w3-xlarge w3-padding-32">Sigma Programme</li>
+                <li class="w3-padding-16">30 Days</li>
+                <li class="w3-padding-16">Warmup Protocol</li>
+                <li class="w3-padding-16">Nutrition Protocol</li>
+                <li class="w3-padding-16">Workout Protocol</li>
+                <li class="w3-padding-16">Basic Supplement Assistance</li>
+                <li class="w3-padding-16">Weekly Follow-Up with Trainer</li>
+                <li class="w3-padding-16">Whatsapp Assistance</li>
+                <li class="w3-padding-16">Youtube Video Tutorial</li>
+                <li class="w3-padding-16">Endurance & Strength Improvement</li>
+                <li class="w3-padding-16">Cardio Respiratory Enhancement</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">Rs 1999/- only </h2>
+                    <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <a href="https://pages.razorpay.com/sigmaplan"> <button class="w3-button w3-black w3-padding-large">Subscribe Now</button></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
